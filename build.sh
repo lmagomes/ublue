@@ -19,6 +19,11 @@ rpm-ostree install fish
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
+# other packages
+wget https://app.testcontainers.cloud/download/testcontainers-desktop_linux_x86-64.rpm  -O /tmp/testcontainers-desktop_linux_x86-64.rpm
+rpm-ostree install /tmp/testcontainers-desktop_linux_x86-64.rpm
+rm /tmp/testcontainers-desktop_linux_x86-64.rpm
+
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
