@@ -23,3 +23,8 @@ rpm-ostree install gnome-shell-extension-system-monitor
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
+
+# install flatpaks
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install --noninteractive --system flathub io.github.zen_browser.zen
+flatpak install --noninteractive --system flathub dev.zed.Zed
