@@ -18,6 +18,7 @@ RELEASE="$(rpm -E %fedora)"
 # rpm-ostree install vlc
 
 rpm-ostree install dotnet-sdk-8.0
+rpm-ostree install gnome-shell-extension-system-monitor
 
 #### Example for enabling a System Unit File
 
