@@ -18,13 +18,14 @@ RELEASE="$(rpm -E %fedora)"
 # rpm-ostree install vlc
 
 # rpm-ostree install dotnet-sdk-8.0
-rpm-ostree install gnome-shell-extension-system-monitor
+rpm-ostree install dotnet-sdk-8.0 \
+    openfortivpn \
+    NetworkManager-fortisslvpn-gnome \
+    NetworkManager-l2tp-gnome \
+    gnome-shell-extension-system-monitor
+
+rpm-ostree install https://release.axocdn.com/linux/gitkraken-amd64.rpm
 
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
-
-# install flatpaks
-# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-# flatpak install --noninteractive --system flathub io.github.zen_browser.zen
-# flatpak install --noninteractive --system flathub dev.zed.Zed
