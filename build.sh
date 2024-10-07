@@ -17,7 +17,7 @@ RELEASE="$(rpm -E %fedora)"
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
-rpm-ostree install dotnet-sdk-8.0
+# rpm-ostree install dotnet-sdk-8.0
 rpm-ostree install gnome-shell-extension-system-monitor
 
 #### Example for enabling a System Unit File
@@ -25,6 +25,6 @@ rpm-ostree install gnome-shell-extension-system-monitor
 # systemctl enable podman.socket
 
 # install flatpaks
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install --noninteractive --system flathub io.github.zen_browser.zen
-flatpak install --noninteractive --system flathub dev.zed.Zed
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# flatpak install --noninteractive --system flathub io.github.zen_browser.zen
+# flatpak install --noninteractive --system flathub dev.zed.Zed
